@@ -1,6 +1,10 @@
 # config.py
 import os
+from dotenv import load_dotenv  # <-- dotenv importu ekle
 from typing import Dict, Any
+
+# .env dosyasını yükle
+load_dotenv()
 
 class AppConfig:
     # API Configuration
@@ -25,4 +29,4 @@ class AppConfig:
             'file_limits_set': bool(cls.MAX_FILE_SIZE),
             'valid_extensions': bool(cls.ALLOWED_EXTENSIONS)
         }
-        return config_status 
+        return config_status
