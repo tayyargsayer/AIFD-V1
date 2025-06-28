@@ -37,8 +37,10 @@ from config.constants import (
     # Warning Messages
     WARNING_FILL_REQUIRED_FIELDS,
     # Default Values
-    DEFAULT_NONE
+    DEFAULT_NONE,
+    WELCOME_MESSAGE
 )
+from components.motivation import _show_motivation_message
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -94,6 +96,12 @@ def main() -> None:
     
     # Create header
     create_header()
+    
+    # Show welcome message
+    st.info(WELCOME_MESSAGE)
+    
+    # Show motivation message
+    _show_motivation_message()
     
     # Create sidebar with model configuration
     model_config = create_model_config_sidebar()
