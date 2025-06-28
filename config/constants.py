@@ -13,6 +13,8 @@ Date: 2025
 # UI CONSTANTS
 # =============================================================================
 
+DEFAULT_PROJECT_DESCRIPTION = "Henüz bir proje açıklaması girilmedi."
+
 # Page Configuration
 PAGE_TITLE = "Öğrenci Proje Fikri Üretici"
 PAGE_ICON = "🎓"
@@ -261,4 +263,6 @@ ASSISTANT_ROLE = "assistant"
 
 VALIDATION_REQUIRED_FIELD = "Bu alan zorunludur"
 VALIDATION_MIN_LENGTH = "Minimum {min_length} karakter gereklidir"
-VALIDATION_MAX_LENGTH = "Maksimum {max_length} karakter olmalıdır" 
+VALIDATION_MAX_LENGTH = "Maksimum {max_length} karakter olmalıdır"
+
+WELCOME_MESSAGE = "Hoş geldiniz! Proje fikri üretmek için formu doldurun ve 'Proje Fikirleri Üret' butonuna tıklayın." 

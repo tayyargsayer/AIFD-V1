@@ -47,7 +47,10 @@ from config.constants import (
     SAFETY_LEVELS,
     
     # Default Values
-    DEFAULT_ZERO
+    DEFAULT_ZERO,
+    
+    # Main Header
+    MAIN_HEADER
 )
 
 def create_header() -> None:
@@ -58,7 +61,7 @@ def create_header() -> None:
     - Single responsibility
     - No magic strings
     """
-    st.title("🚀 Proje Öneriniz")
+    st.title(MAIN_HEADER)
 
 def create_detailed_info_input() -> str:
     """
