@@ -14,9 +14,9 @@ Date: 2025
 from typing import Dict, Any, List, Optional
 import streamlit as st
 
-from config.settings import AppConfig
-from utils.helpers import validate_file
-from config.constants import (
+from first_project.config.settings import AppConfig
+from first_project.utils.helpers import validate_file
+from first_project.config.constants import (
     # Form Labels and Help Text
     DETAILED_INFO_LABEL, DETAILED_INFO_PLACEHOLDER, DETAILED_INFO_HELP,
     CATEGORIES_LABEL, CATEGORIES_HELP,

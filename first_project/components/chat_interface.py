@@ -13,14 +13,12 @@ Date: 2025
 """
 import time
 import logging
-from typing import Dict, Any, List, Optional
 import streamlit as st
-from PIL import Image
 
-from config.settings import AppConfig
-from utils.gemini_client import GeminiClient
-from utils.helpers import create_chat_prompt, display_info_box, display_error_box
-from config.constants import (
+from first_project.config.settings import AppConfig
+from first_project.utils.gemini_client import GeminiClient
+from first_project.utils.helpers import create_chat_prompt, display_info_box, display_error_box
+from first_project.config.constants import (
     # Chat Status Messages
     STATUS_CHAT_PREPARING, STATUS_CHAT_ANALYZING, STATUS_CHAT_GENERATING,
     STATUS_CHAT_READY, STATUS_CHAT_COMPLETE, STATUS_CHAT_ERROR,

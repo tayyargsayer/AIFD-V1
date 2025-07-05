@@ -51,14 +51,15 @@ temperature = st.slider("Temperature", 0.0, 1.0, 0.7, 0.05)
 ```
 
 ### ✅ İYİ ÖRNEK (Constants Kullanımı)
+
 ```python
 # YAPINIZ!
-from config.constants import SAVE_PROJECT_BUTTON, SUCCESS_PROJECT_SAVED
-from config.constants import TEMPERATURE_MIN, TEMPERATURE_MAX, TEMPERATURE_DEFAULT
+from first_project.config.constants import SAVE_PROJECT_BUTTON, SUCCESS_PROJECT_SAVED
+from first_project.config.constants import TEMPERATURE_MIN, TEMPERATURE_MAX, TEMPERATURE_DEFAULT
 
 if st.button(SAVE_PROJECT_BUTTON):
     st.success(SUCCESS_PROJECT_SAVED)
-    
+
 temperature = st.slider(
     TEMPERATURE_LABEL,
     min_value=TEMPERATURE_MIN,
