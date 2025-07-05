@@ -1,16 +1,15 @@
 """
 Gemini API client utility for the Student Project Generator application.
 """
-import os
 import time
 import logging
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Dict, Optional, List
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from PIL import Image
 import io
 
-from config.settings import AppConfig
+from first_project.config.settings import AppConfig
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

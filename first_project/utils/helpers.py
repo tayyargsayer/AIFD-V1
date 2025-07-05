@@ -6,14 +6,11 @@ import json
 import base64
 import logging
 from datetime import datetime
-from typing import Dict, Any, List, Optional, Union, Tuple
-import pandas as pd
-from PIL import Image
-import io
+from typing import Dict, Any, List, Optional, Tuple
 import streamlit as st
 
-from config.settings import AppConfig
-from config.constants import COMPLEXITY_DESCRIPTIONS
+from first_project.config.settings import AppConfig
+from first_project.config.constants import COMPLEXITY_DESCRIPTIONS
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

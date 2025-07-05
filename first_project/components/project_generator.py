@@ -18,9 +18,9 @@ import streamlit as st
 from PIL import Image
 import io
 
-from config.settings import AppConfig
-from utils.gemini_client import GeminiClient
-from utils.helpers import (
+from first_project.config.settings import AppConfig
+from first_project.utils.gemini_client import GeminiClient
+from first_project.utils.helpers import (
     create_project_prompt, 
     extract_title_from_content,
     save_project,
@@ -28,7 +28,7 @@ from utils.helpers import (
     display_success_box,
     display_error_box
 )
-from config.constants import (
+from first_project.config.constants import (
     # Status Messages
     STATUS_GENERATING, STATUS_PROCESSING_INPUTS, STATUS_PROCESSING_IMAGE,
     STATUS_CREATING_PROMPT, STATUS_CONNECTING_API, STATUS_GENERATING_IDEAS,
