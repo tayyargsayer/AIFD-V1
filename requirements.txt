@@ -1,0 +1,8 @@
+python-dotenv
+
+#FASTAPI LIBRARIES
+fastapi
+
+#FIREBASE LIBRARIES
+firebase-admin
+
