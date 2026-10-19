@@ -1,0 +1,10 @@
+
+
+# Secrets (added 2026-10-19)
+.env
+.env.*
+!.env.example
+*firebase-adminsdk*.json
+*service*account*.json
+serviceaccount.json
+credentials.json
